@@ -6,10 +6,12 @@ import Home from './pages/Home';
 import theme from './theme';
 
 function App() {
-  return <ThemeProvider theme={theme}>
-    <Reset />
-    <Home />
-  </ThemeProvider>;
+  return (
+    <ThemeProvider theme={theme}>
+      <Reset />
+      <Home />
+    </ThemeProvider>
+  );
 }
 
 export default App;
